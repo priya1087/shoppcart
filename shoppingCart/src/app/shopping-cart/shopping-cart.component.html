@@ -1,0 +1,187 @@
+<div class="container-fluid">
+    <div class="cart">
+        <div class="table-responsive">
+            <div class="cart-page-inner">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-black">Product</th>
+                            <th scope="col" class="text-black">Price</th>
+                            <th scope="col" class="text-black">Quantity</th>
+                            <th scope="col" class="text-black">Total</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td>
+                                <div class="main">
+                                    <div class="img">
+                                        <a href="#"><img [src]="laptopimg" alt="Image"></a>
+                                        <div class="ptag">
+                                        <p>Laptop</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                INR.20,000
+                            </td>
+                            <td>
+                                <div class="counter">
+                                    <button type="button" class="btn-minus" (click)="minus1() "><i
+                                            class="fa fa-minus"></i>-</button>
+                                    <input type="text" [value]="laptopQuantity">
+                                    <button type="button" class="btn-plus" (click)="plus1() "><i
+                                            class="fa fa-plus"></i>+</button>
+                                </div>
+                            </td>
+                            <td>
+                                {{laptopTotal}}
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="main">
+                                    <div class="img">
+                                        <a href="#"><img [src]="notebookimg" alt="Image"></a>
+                                        <div class="ptag">
+                                        <p>Notebook</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                INR.100
+                            </td>
+                            <td>
+                                <div class="counter">
+                                    <button type="button" class="btn-minus" (click)="minus2() "><i
+                                            class="fa fa-minus"></i>-</button>
+                                    <input type="text" [value]="notebookQuantity">
+                                    <button type="button" class="btn-plus" (click)="plus2() "><i
+                                            class="fa fa-plus"></i>+</button>
+                                </div>
+                            </td>
+                            <td>
+                                {{notebookTotal}}
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="main">
+                                    <div class="img">
+                                        <a href="#"><img [src]="penimg" alt="Image"></a>
+                                        <div class="ptag">
+                                        <p>Pen</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                INR.150
+                            </td>
+                            <td>
+                                <div class="counter">
+                                    <button type="button" class="btn-minus" (click)="minus3() "><i
+                                            class="fa fa-minus"></i>-</button>
+                                    <input type="text" [value]="penQuantity">
+                                    <button type="button" class="btn-plus" (click)="plus3() "><i
+                                            class="fa fa-plus"></i>+</button>
+                                </div>
+                            </td>
+                            <td>
+                                {{penTotal}}
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="checkout">
+    <ul>
+
+        <li class="cart-total">Grand Total
+            <span> {{grandTotal}}</span>
+        </li>
+    </ul>
+
+</div>
+<div class="d-flex Bottom" >
+ <div class="radio">
+        <label style="font-size: medium;">
+            <input style="margin-right: 2rem;" type="radio" name="credit card/debitcard" />Credit Card/Debit Card
+        </label>
+        <br /><br />
+
+        <label style="font-size: medium;">
+            <input style="margin-right: 2rem;" type="radio" name="credit card/debitcard" />Paytm/Gpay/Phone Pay
+        </label>
+
+        <br /><br />
+        <label style="font-size: medium;">
+            <input style="margin-right: 2rem;" type="radio" name="credit card/debitcard" />UPI payment
+        </label>
+        <br /><br />
+    </div>
+
+    <div class="paybtn">
+        <button type="button" class="btn btn-primary">Pay Now</button>
+    </div>
+</div>
+
+<!-- 
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Purchase Info</h2>
+                       
+                    </div>
+                </div>
+                <div class="checkout">
+                    <ul>
+                        
+                        <li class="cart-total">Grand Total  
+                        <span>  {{ grandTotal}}</span></li>
+                    </ul>
+                    <button color="primary" mat-raised-button>Pay now</button>
+                </div>
+            </div>
+            
+           
+            </div>
+
+            
+ </div>
+        
+       
+    </div> -->
+
+
+<!-- <div class="container">
+        <div class="col-lg-4 offset-lg-4">
+    
+    <div class="checkout">
+        <ul>
+            
+            <li class="cart-total">Grand Total
+            <span>{{grandTotal}}</span></li>
+        </ul>
+        <button color="primary" mat-raised-button>Pay now</button>
+    </div>
+</div>
+</div> -->
